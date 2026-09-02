@@ -658,13 +658,18 @@
       {
         "filename": "tang_nano_hat.kicad_sch",
         "name": "tang_nano_hat",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "5d207e50-863e-4601-a54a-c54326e94ddf"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR1-5,R1-3,C1",
     "variants": []
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "5d207e50-863e-4601-a54a-c54326e94ddf",
+      "tang_nano_hat"
+    ]
+  ],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {
