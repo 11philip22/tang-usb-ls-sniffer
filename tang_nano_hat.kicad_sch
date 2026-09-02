@@ -775,6 +775,118 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint_Small"
+				(at 0 2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Small oscilloscope test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_Small_0_1"
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_Small_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 0)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x24"
 			(pin_names
 				(offset 1.016)
@@ -2146,6 +2258,18 @@
 		(uuid "35f9c6b6-3f26-4486-b95c-aa30737042e8")
 	)
 	(junction
+		(at 165.1 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4a83b8b7-b1fb-41d7-bab3-4f0dba8c7e76")
+	)
+	(junction
+		(at 165.1 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "69ee75b0-8054-40f6-b918-ac0c11b25cb5")
+	)
+	(junction
 		(at 26.67 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2239,6 +2363,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 64.77) (xy 170.18 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "041aa1a1-6dfc-4254-b0e0-d3fd566b1051")
+	)
+	(wire
+		(pts
 			(xy 123.19 36.83) (xy 123.19 46.99)
 		)
 		(stroke
@@ -2329,7 +2463,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 64.77) (xy 167.64 64.77)
+			(xy 162.56 64.77) (xy 165.1 64.77)
 		)
 		(stroke
 			(width 0)
@@ -2479,7 +2613,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 59.69) (xy 167.64 59.69)
+			(xy 162.56 59.69) (xy 165.1 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2669,6 +2803,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 53.34) (xy 165.1 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0f64bb2-9597-4f9a-8209-599f3f8ebf30")
+	)
+	(wire
+		(pts
 			(xy 104.14 44.45) (xy 99.06 44.45)
 		)
 		(stroke
@@ -2809,6 +2953,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 59.69) (xy 170.18 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec00b762-92cc-408e-a217-5f712de319ce")
+	)
+	(wire
+		(pts
 			(xy 43.18 81.28) (xy 43.18 87.63)
 		)
 		(stroke
@@ -2836,6 +2990,16 @@
 			(type default)
 		)
 		(uuid "f58e7037-e1b4-4733-b1ea-bb7d5a238976")
+	)
+	(wire
+		(pts
+			(xy 165.1 64.77) (xy 165.1 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8019460-7e3c-4e23-ae39-e47065506e47")
 	)
 	(wire
 		(pts
@@ -2868,7 +3032,7 @@
 		(uuid "1afd3856-2778-4b58-8a6f-6eb029edaac9")
 	)
 	(label "DM_RX"
-		(at 167.64 64.77 0)
+		(at 170.18 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2918,7 +3082,7 @@
 		(uuid "d8f6963a-1f7e-4bd5-9319-05f6ddd9c827")
 	)
 	(label "DP_RX"
-		(at 167.64 59.69 0)
+		(at 170.18 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3001,6 +3165,83 @@
 			(project "tang_nano_hat"
 				(path "/5d207e50-863e-4601-a54a-c54326e94ddf"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 165.1 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0fde2b64-21c7-4241-b87f-945310c81fb6")
+		(property "Reference" "TP2"
+			(at 167.894 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DM_RX"
+			(at 168.91 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 165.1 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Small oscilloscope test point on DM_RX"
+			(at 165.1 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dbd35e7e-038f-4511-873a-d89359192e56")
+		)
+		(instances
+			(project "tang_nano_hat"
+				(path "/5d207e50-863e-4601-a54a-c54326e94ddf"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -4187,6 +4428,83 @@
 			(project "tang_nano_hat"
 				(path "/5d207e50-863e-4601-a54a-c54326e94ddf"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint_Small")
+		(at 165.1 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "99ee4aa9-4227-4657-94fc-3f1ed81baaf8")
+		(property "Reference" "TP1"
+			(at 167.894 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DP_RX"
+			(at 168.91 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 165.1 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Small oscilloscope test point on DP_RX"
+			(at 165.1 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c120f677-1c73-402e-b347-ce5be47bb1d1")
+		)
+		(instances
+			(project "tang_nano_hat"
+				(path "/5d207e50-863e-4601-a54a-c54326e94ddf"
+					(reference "TP1")
 					(unit 1)
 				)
 			)
