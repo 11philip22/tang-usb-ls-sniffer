@@ -1838,6 +1838,172 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D_Zener"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Zener"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Zener diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "D_Zener_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Zener_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -2246,13 +2412,13 @@
 		(uuid "17e9a32b-5485-4587-89b0-cad60ea40f50")
 	)
 	(junction
-		(at 38.1 44.45)
+		(at 46.99 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2fe29857-b36c-4e58-a1c2-d2ed7cfe696f")
 	)
 	(junction
-		(at 34.29 41.91)
+		(at 43.18 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "35f9c6b6-3f26-4486-b95c-aa30737042e8")
@@ -2270,7 +2436,7 @@
 		(uuid "69ee75b0-8054-40f6-b918-ac0c11b25cb5")
 	)
 	(junction
-		(at 26.67 46.99)
+		(at 35.56 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "747159b4-f775-41fe-8117-53aab737f116")
@@ -2282,7 +2448,7 @@
 		(uuid "80b80b7b-9238-46b8-8922-584abae654f4")
 	)
 	(junction
-		(at 66.04 46.99)
+		(at 74.93 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "986774c1-7a6f-47c1-93c8-42236f9873c0")
@@ -2294,7 +2460,7 @@
 		(uuid "9f5f1544-8238-4476-ad46-8cb4c5cb3b4d")
 	)
 	(junction
-		(at 66.04 31.75)
+		(at 74.93 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b92c9aaf-117f-45ca-b322-d89f61ed3a3a")
@@ -2312,7 +2478,7 @@
 		(uuid "ca6f7023-02d5-4873-a770-98cd736937ac")
 	)
 	(junction
-		(at 30.48 29.21)
+		(at 39.37 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cdbfd520-a109-4438-9f87-7fcbe0b80dda")
@@ -2324,7 +2490,7 @@
 		(uuid "d1111cc9-aec0-44bf-90cd-32529c24fec8")
 	)
 	(junction
-		(at 66.04 44.45)
+		(at 74.93 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e82e4faa-d1cf-4f45-b569-5b55bb3f22c7")
@@ -2373,6 +2539,16 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 29.21) (xy 27.94 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06cf9700-dafb-4870-bc59-f69e373e53fb")
+	)
+	(wire
+		(pts
 			(xy 123.19 36.83) (xy 123.19 46.99)
 		)
 		(stroke
@@ -2383,7 +2559,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 41.91) (xy 41.91 41.91)
+			(xy 43.18 41.91) (xy 50.8 41.91)
 		)
 		(stroke
 			(width 0)
@@ -2413,7 +2589,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 46.99) (xy 66.04 53.34)
+			(xy 74.93 46.99) (xy 74.93 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2423,7 +2599,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 31.75) (xy 66.04 44.45)
+			(xy 74.93 31.75) (xy 74.93 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2433,7 +2609,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 29.21) (xy 66.04 31.75)
+			(xy 74.93 29.21) (xy 74.93 31.75)
 		)
 		(stroke
 			(width 0)
@@ -2483,7 +2659,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 34.29) (xy 41.91 34.29)
+			(xy 46.99 34.29) (xy 50.8 34.29)
 		)
 		(stroke
 			(width 0)
@@ -2523,7 +2699,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 31.75) (xy 66.04 31.75)
+			(xy 72.39 31.75) (xy 74.93 31.75)
 		)
 		(stroke
 			(width 0)
@@ -2533,7 +2709,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 29.21) (xy 63.5 29.21)
+			(xy 74.93 29.21) (xy 72.39 29.21)
 		)
 		(stroke
 			(width 0)
@@ -2583,7 +2759,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 44.45) (xy 38.1 44.45)
+			(xy 29.21 44.45) (xy 46.99 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2603,7 +2779,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 41.91) (xy 34.29 41.91)
+			(xy 29.21 41.91) (xy 43.18 41.91)
 		)
 		(stroke
 			(width 0)
@@ -2633,7 +2809,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 39.37) (xy 30.48 29.21)
+			(xy 39.37 39.37) (xy 39.37 29.21)
 		)
 		(stroke
 			(width 0)
@@ -2643,7 +2819,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 46.99) (xy 26.67 53.34)
+			(xy 35.56 46.99) (xy 35.56 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2683,7 +2859,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 29.21) (xy 30.48 22.86)
+			(xy 39.37 29.21) (xy 39.37 22.86)
 		)
 		(stroke
 			(width 0)
@@ -2693,7 +2869,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 31.75) (xy 34.29 41.91)
+			(xy 43.18 31.75) (xy 43.18 41.91)
 		)
 		(stroke
 			(width 0)
@@ -2713,7 +2889,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 44.45) (xy 66.04 44.45)
+			(xy 72.39 44.45) (xy 74.93 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2753,13 +2929,23 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 36.83) (xy 26.67 36.83)
+			(xy 50.8 36.83) (xy 35.56 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8b7c2a65-5daf-476d-bb42-a1386e68fee4")
+	)
+	(wire
+		(pts
+			(xy 35.56 29.21) (xy 39.37 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c40a7d1-a27c-4cbd-b207-84120888aeea")
 	)
 	(wire
 		(pts
@@ -2773,7 +2959,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 46.99) (xy 66.04 46.99)
+			(xy 72.39 46.99) (xy 74.93 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2800,6 +2986,16 @@
 			(type default)
 		)
 		(uuid "ab5c7558-597d-4ba9-81aa-ffe1640e8c10")
+	)
+	(wire
+		(pts
+			(xy 24.13 31.75) (xy 24.13 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad390731-34ba-452b-83b1-789a29b15c08")
 	)
 	(wire
 		(pts
@@ -2863,7 +3059,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 44.45) (xy 38.1 34.29)
+			(xy 46.99 44.45) (xy 46.99 34.29)
 		)
 		(stroke
 			(width 0)
@@ -2873,7 +3069,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 44.45) (xy 66.04 46.99)
+			(xy 74.93 44.45) (xy 74.93 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2883,7 +3079,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 31.75) (xy 34.29 31.75)
+			(xy 50.8 31.75) (xy 43.18 31.75)
 		)
 		(stroke
 			(width 0)
@@ -2893,7 +3089,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 44.45) (xy 38.1 44.45)
+			(xy 50.8 44.45) (xy 46.99 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2903,7 +3099,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 36.83) (xy 26.67 46.99)
+			(xy 35.56 36.83) (xy 35.56 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2913,7 +3109,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 46.99) (xy 41.91 46.99)
+			(xy 35.56 46.99) (xy 50.8 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2933,7 +3129,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 29.21) (xy 41.91 29.21)
+			(xy 39.37 29.21) (xy 50.8 29.21)
 		)
 		(stroke
 			(width 0)
@@ -2973,7 +3169,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 39.37) (xy 30.48 39.37)
+			(xy 50.8 39.37) (xy 39.37 39.37)
 		)
 		(stroke
 			(width 0)
@@ -3022,7 +3218,7 @@
 		(uuid "fdc61601-2ec7-49e1-9fc1-09cdc304d8be")
 	)
 	(label "D+"
-		(at 20.32 41.91 180)
+		(at 29.21 41.91 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3042,7 +3238,7 @@
 		(uuid "34ae6cd1-f4a0-43c8-8fa9-e73aa8fa1c3f")
 	)
 	(label "D-"
-		(at 20.32 44.45 180)
+		(at 29.21 44.45 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3249,7 +3445,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 26.67 53.34 0)
+		(at 35.56 53.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3260,7 +3456,7 @@
 		(fields_autoplaced yes)
 		(uuid "10295c95-7a52-43d4-b92d-d24f3f972b43")
 		(property "Reference" "#PWR02"
-			(at 26.67 59.69 0)
+			(at 35.56 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3271,7 +3467,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 26.67 58.42 0)
+			(at 35.56 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3281,7 +3477,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 26.67 53.34 0)
+			(at 35.56 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3292,7 +3488,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 26.67 53.34 0)
+			(at 35.56 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3303,7 +3499,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 26.67 53.34 0)
+			(at 35.56 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3326,8 +3522,99 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Zener")
+		(at 31.75 29.21 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "129c054b-0048-45fc-adef-cc8ac7905d95")
+		(property "Reference" "D1"
+			(at 31.75 22.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Zener"
+			(at 31.75 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 31.75 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 31.75 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part #" "C82323"
+			(at 31.75 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "12698deb-29ef-40ab-9ebc-2f6dcfb2e260")
+		)
+		(pin "1"
+			(uuid "e26184b3-d8c0-4fce-b985-89772125e3b9")
+		)
+		(instances
+			(project "tang_nano_hat"
+				(path "/5d207e50-863e-4601-a54a-c54326e94ddf"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "C456021:AFSS-JB17.6")
-		(at 53.34 38.1 0)
+		(at 62.23 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3337,7 +3624,7 @@
 		(dnp no)
 		(uuid "24197b45-7f72-48c1-8996-89044ba85d4c")
 		(property "Reference" "J3"
-			(at 53.34 24.13 0)
+			(at 62.23 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3347,7 +3634,7 @@
 			)
 		)
 		(property "Value" "AF SS-JB17.6"
-			(at 53.34 52.07 0)
+			(at 62.23 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3357,7 +3644,7 @@
 			)
 		)
 		(property "Footprint" "C456021:USB-A-TH_AF-SS-JB17.6"
-			(at 53.34 38.1 0)
+			(at 62.23 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3368,7 +3655,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1912111437_SHOU-HAN-AF-SS-JB17-6_C456021.pdf"
-			(at 53.34 38.1 0)
+			(at 62.23 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3379,7 +3666,7 @@
 			)
 		)
 		(property "Description" "Dual USB 2.0 Type-A receptacle, stacked, right-angle, through-hole"
-			(at 53.34 38.1 0)
+			(at 62.23 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3390,7 +3677,7 @@
 			)
 		)
 		(property "Manufacturer" "SHOU HAN"
-			(at 53.34 38.1 0)
+			(at 62.23 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3401,7 +3688,7 @@
 			)
 		)
 		(property "MPN" "AF SS-JB17.6"
-			(at 53.34 38.1 0)
+			(at 62.23 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3412,7 +3699,7 @@
 			)
 		)
 		(property "LCSC Part #" "C456021"
-			(at 53.34 38.1 0)
+			(at 62.23 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3548,7 +3835,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 66.04 53.34 0)
+		(at 74.93 53.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3559,7 +3846,7 @@
 		(fields_autoplaced yes)
 		(uuid "3a4aa9ea-b494-414b-8736-47a7e5d16523")
 		(property "Reference" "#PWR01"
-			(at 66.04 59.69 0)
+			(at 74.93 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3570,7 +3857,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 66.04 58.42 0)
+			(at 74.93 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3580,7 +3867,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 53.34 0)
+			(at 74.93 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3591,7 +3878,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 53.34 0)
+			(at 74.93 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3602,7 +3889,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 66.04 53.34 0)
+			(at 74.93 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3783,7 +4070,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 30.48 22.86 0)
+		(at 39.37 22.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3793,7 +4080,7 @@
 		(dnp no)
 		(uuid "56f85432-4e09-4dc4-923f-1969615acad0")
 		(property "Reference" "#PWR03"
-			(at 30.48 26.67 0)
+			(at 39.37 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3804,7 +4091,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 28.702 18.542 0)
+			(at 37.592 18.542 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3815,7 +4102,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 30.48 22.86 0)
+			(at 39.37 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3826,7 +4113,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 30.48 22.86 0)
+			(at 39.37 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3837,7 +4124,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 30.48 22.86 0)
+			(at 39.37 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4708,6 +4995,84 @@
 			(project "tang_nano_hat"
 				(path "/5d207e50-863e-4601-a54a-c54326e94ddf"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 24.13 31.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b5b5dbab-8c62-4826-a50c-a9c9d454a700")
+		(property "Reference" "#PWR08"
+			(at 24.13 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 24.13 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 24.13 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 24.13 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3bcddc1e-0f7c-4c05-89f6-c50c316734f1")
+		)
+		(instances
+			(project "tang_nano_hat"
+				(path "/5d207e50-863e-4601-a54a-c54326e94ddf"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
