@@ -3,3 +3,8 @@
 .history/
 *.lck
 *.rpt
+production/
+fabrication-toolkit-options.json
+docs/*.png
+docs/*.dxf
+docs/*.xlsx
