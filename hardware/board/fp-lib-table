@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "C456021")(type "KiCad")(uri "${KIPRJMOD}/libraries/C456021.pretty")(options "")(descr "SHOU HAN AF SS-JB17.6 dual USB-A connector"))
+  (lib (name "C10429")(type "KiCad")(uri "${KIPRJMOD}/libraries/C10429.pretty")(options "")(descr "Texas Instruments SN74LVC2G17DBVR SOT-23-6 footprint"))
+  (lib (name "C94934")(type "KiCad")(uri "${KIPRJMOD}/libraries/C94934.pretty")(options "")(descr "Texas Instruments TPD2EUSB30ADRTR SOT-9X3 footprint"))
+)
