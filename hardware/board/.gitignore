@@ -1,0 +1,6 @@
+*.kicad_prl
+.history/
+*.lck
+*.rpt
+production/
+fabrication-toolkit-options.json

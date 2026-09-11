@@ -1,11 +1,2 @@
-*.kicad_prl
 .DS_Store
-.history/
 .codex-kicad/
-*.lck
-*.rpt
-production/
-fabrication-toolkit-options.json
-docs/*.png
-docs/*.dxf
-docs/*.xlsx
