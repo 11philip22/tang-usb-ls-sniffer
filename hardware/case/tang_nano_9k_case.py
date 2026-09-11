@@ -109,14 +109,16 @@ def build():
             lid = lid.union(cq.Workplane('YZ', origin=(x - 2, 0, 0))
                             .polyline(rib).close().extrude(4))
 
-    # Shortened stops retain the HAT at clear edge areas beyond J1/J2.
-    # The old Tang-height posts would pass straight through the HAT PCB.
-    # The mated headers retain the stack; these stops have no preload.
+    # Stops retain the HAT without preload; narrow pegs locate its 2.2 mm holes.
+    # Peg tips stop 0.2 mm above the HAT underside.
     # y is mirrored because the print-oriented lid is turned over for assembly.
     stop_tip = HAT_TOP + .30
     for x, y in MOUNTS:
         lid = lid.union(cylinder(x, -y, LID_THICKNESS - .05, 3.6,
                                  BASE_HEIGHT - stop_tip + .05))
+        peg = (cylinder(x, -y, TOTAL_HEIGHT - stop_tip - .05, PEG_DIAMETER,
+                        stop_tip - HAT_Z - .15).edges('>Z').chamfer(.15))
+        lid = lid.union(peg)
     # Do not let the rear locating skirt hang into the USB-A cable opening.
     lid = lid.cut(box(CASE_CENTER_X + INNER_LENGTH / 2, 0,
                       LID_THICKNESS, 8, USB_A_WIDTH, 4))
@@ -147,6 +149,8 @@ def check(base, lid):
     hat = (cq.Workplane('XY').box(70, 26, HAT_THICKNESS,
                                  centered=(True, True, False))
            .edges('|Z').fillet(2.54).translate((0, 0, HAT_Z)))
+    for x, y in MOUNTS:
+        hat = hat.cut(cylinder(x, y, HAT_Z - 1, 2.2, HAT_THICKNESS + 2))
     # Conservative J3 body envelope from the aligned KiCad VRML model:
     # x=J3_X-4.788..J3_X+12.812, y=+-8.052, top=16.241 above HAT.
     # Pins below the PCB only span x=J3_X-4.288..J3_X+7.912;

@@ -89,10 +89,12 @@ Adjust the constants at the top of `tang_nano_9k_case.py`:
 
 - `STACK_GAP`: measured Tang-top to HAT-underside distance. Values below 10 mm require a new component-clearance assessment and are rejected.
 - `LID_GAP` / `RIB_PROJECTION`: loosen or tighten the lid's friction fit.
-- `PEG_DIAMETER`: fit of the locating pegs in the Tang's mounting holes.
+- `PEG_DIAMETER`: fit of the base and lid locating pegs in the Tang and HAT mounting holes.
 - `USB_A_WIDTH`, `USB_WIDTH` and `USB_HEIGHT`: connector/cable clearance.
 - `J3_X`: connector X position relative to the PCB centre: **KiCad X minus 135 mm**. The reference model and clearance checks share this value.
 
 After changing dimensions, regenerate both parts and rerun the checker. **Do not scale the STLs** to change the stack gap. Re-export the HAT reference after moving components; changes to connector rotation, Y position or board outline require corresponding source updates.
+
+Both boards use two 2.2 mm mounting holes, 20.8 mm apart. The base locates the Tang; the lid's 1.7 mm pegs enter the HAT holes, with 0.3 mm clearance between the wider stops and the HAT top surface. The peg tips stop 0.2 mm above the HAT underside.
 
 J3's raw STEP and the WRL used by the PCB have different origins. The checker aligns the STEP by `(0, -3.862, +4.090841)` mm before rotation and placement. Do not substitute the raw STEP blindly in a board export. U1/U2 clearance is checked using a conservative component envelope.
