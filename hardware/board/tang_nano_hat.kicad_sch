@@ -7281,7 +7281,7 @@
 				)
 			)
 		)
-		(property "Value" "100K"
+		(property "Value" "3.9K"
 			(at 116.84 125.73 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7324,7 +7324,7 @@
 				)
 			)
 		)
-		(property "LCSC Part #" "C25803"
+		(property "LCSC Part #" "C23018"
 			(at 116.84 125.73 0)
 			(hide yes)
 			(show_name no)

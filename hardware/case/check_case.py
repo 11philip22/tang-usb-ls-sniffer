@@ -1,7 +1,7 @@
 """Check exported meshes and reference STEP models, then render a preview.
 
 Run without arguments after tang_nano_9k_case.py, with CadQuery 2.8 and trimesh.
-Required reference models live here and in ../board/libraries.
+Required reference models live in 3d/ and ../board/libraries.
 """
 from pathlib import Path
 import cadquery as cq
@@ -27,7 +27,7 @@ def collision_volume(first, second):
 
 def check_meshes(base, lid):
     for name, part in [('base', base), ('lid', lid)]:
-        mesh = trimesh.load_mesh(ROOT / f'tang_nano_9k_{name}.stl')
+        mesh = trimesh.load_mesh(design.MODEL_DIR / f'tang_nano_9k_{name}.stl')
         assert mesh.is_watertight and mesh.is_winding_consistent, name
         assert mesh.body_count == 1 and mesh.volume > 0, name
         assert abs(mesh.volume - part.val().Volume()) < 1.0, name
@@ -36,8 +36,8 @@ def check_meshes(base, lid):
 
 
 def references(base, lid):
-    tang_file = ROOT / 'tang-solid-reference.step'
-    hat_file = ROOT / 'hat-fit-standard.step'
+    tang_file = design.MODEL_DIR / 'tang-solid-reference.step'
+    hat_file = design.MODEL_DIR / 'hat-fit-standard.step'
     connector_file = (ROOT.parent / 'board/libraries/C456021.3dshapes/'
                       'USB-A-TH_AF-SS-JB17.6.step')
     assert all(p.is_file() for p in [tang_file, hat_file, connector_file]), (

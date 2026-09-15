@@ -1,10 +1,12 @@
 """Tang Nano 9K + USB LS HAT enclosure. Units: mm. Requires cadquery 2.8.
 Run: python tang_nano_9k_case.py
-Exports two STLs in print orientation and a STEP assembly beside this file.
+Exports two STLs in print orientation and a STEP assembly into 3d/.
 STACK_GAP is provisional: measure your mated headers before printing.
 """
 from pathlib import Path
 import cadquery as cq
+
+MODEL_DIR = Path(__file__).resolve().parent / '3d'
 
 # Fit adjustments; preserve the board dimensions and mounting-hole locations.
 PCB_THICKNESS = 1.6
@@ -178,14 +180,14 @@ def check(base, lid):
 if __name__ == '__main__':
     base, lid = build()
     _, interference = check(base, lid)
-    output = Path(__file__).resolve().parent
+    MODEL_DIR.mkdir(exist_ok=True)
     for name, part in [('base', base), ('lid', lid)]:
-        cq.exporters.export(part, str(output / f'tang_nano_9k_{name}.stl'),
+        cq.exporters.export(part, str(MODEL_DIR / f'tang_nano_9k_{name}.stl'),
                             tolerance=.025, angularTolerance=.08)
     assembly = cq.Assembly(name='Tang_Nano_9K_USB_LS_HAT_case')
     assembly.add(base, name='base', color=cq.Color(.16, .30, .43))
     assembly.add(assembled_lid(lid), name='lid', color=cq.Color(.31, .49, .61))
-    assembly.export(str(output / 'tang_nano_9k_case.step'))
+    assembly.export(str(MODEL_DIR / 'tang_nano_9k_case.step'))
     print(f'Checked: two valid solids; rib interference {interference:.3f} mm^3.')
     print(f'Assembled size: {OUTER_LENGTH:.1f} x {OUTER_WIDTH:.1f} x {TOTAL_HEIGHT:.1f} mm')
     print(f'PROVISIONAL header gap: {STACK_GAP:.1f} mm (Tang top to HAT underside).')
